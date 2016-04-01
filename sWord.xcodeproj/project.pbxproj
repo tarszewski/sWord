@@ -15,6 +15,9 @@
 		FA3290321CAE856F007BFB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3290301CAE856F007BFB48 /* LaunchScreen.storyboard */; };
 		FA32903D1CAE8570007BFB48 /* sWordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32903C1CAE8570007BFB48 /* sWordTests.swift */; };
 		FA3290481CAE8570007BFB48 /* sWordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290471CAE8570007BFB48 /* sWordUITests.swift */; };
+		FA3290561CAE909B007BFB48 /* word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290551CAE909B007BFB48 /* word.swift */; };
+		FA3290571CAE909B007BFB48 /* word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290551CAE909B007BFB48 /* word.swift */; };
+		FA3290581CAE909B007BFB48 /* word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290551CAE909B007BFB48 /* word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		FA3290431CAE8570007BFB48 /* sWordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sWordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3290471CAE8570007BFB48 /* sWordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sWordUITests.swift; sourceTree = "<group>"; };
 		FA3290491CAE8570007BFB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3290551CAE909B007BFB48 /* word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				FA3290241CAE856F007BFB48 /* AppDelegate.swift */,
 				FA3290261CAE856F007BFB48 /* ViewController.swift */,
 				FA3290281CAE856F007BFB48 /* Main.storyboard */,
+				FA3290551CAE909B007BFB48 /* word.swift */,
 				FA32902E1CAE856F007BFB48 /* Assets.xcassets */,
 				FA3290301CAE856F007BFB48 /* LaunchScreen.storyboard */,
 				FA3290331CAE856F007BFB48 /* Info.plist */,
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3290271CAE856F007BFB48 /* ViewController.swift in Sources */,
+				FA3290561CAE909B007BFB48 /* word.swift in Sources */,
 				FA3290251CAE856F007BFB48 /* AppDelegate.swift in Sources */,
 				FA32902D1CAE856F007BFB48 /* sWord.xcdatamodeld in Sources */,
 			);
@@ -273,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA32903D1CAE8570007BFB48 /* sWordTests.swift in Sources */,
+				FA3290571CAE909B007BFB48 /* word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3290481CAE8570007BFB48 /* sWordUITests.swift in Sources */,
+				FA3290581CAE909B007BFB48 /* word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
