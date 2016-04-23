@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T40-LF-2fm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g7n-O4-9dx">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Dictionary Table View Controller-->
+        <!--Twoje słowniki-->
         <scene sceneID="gxI-pJ-Uh9">
             <objects>
                 <tableViewController id="T40-LF-2fm" customClass="dictionaryTableViewController" customModule="sWord" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="dictionaryTableViewCell" rowHeight="50" id="gQx-pT-B4P" customClass="dictionaryTableViewCell" customModule="sWord" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gQx-pT-B4P" id="M0v-A8-Rhk">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
@@ -39,6 +39,7 @@
                                 <connections>
                                     <outlet property="countLabel" destination="zuS-RL-Obw" id="QSb-8X-1Jq"/>
                                     <outlet property="nameLabel" destination="Sn1-fr-q6M" id="YCT-pQ-M7V"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowWords" id="KHA-g7-mOh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -47,15 +48,18 @@
                             <outlet property="delegate" destination="T40-LF-2fm" id="HGZ-Kn-hkB"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Twoje słowniki" id="H9L-QL-Jty">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rEr-HS-FAi"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6g-eb-dk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-316" y="310"/>
+            <point key="canvasLocation" x="496" y="310"/>
         </scene>
-        <!--View Controller-->
+        <!--Dictionary View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sWord" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="dictionaryViewController" customModule="sWord" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -140,6 +144,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="FirstWordLabel" destination="IUx-b7-6NG" id="lhQ-1a-Qna"/>
                         <outlet property="SecondWordLabel" destination="UTl-J7-tY7" id="jPU-Em-lEg"/>
                         <outlet property="UIBarButton" destination="sjd-rz-NUC" id="wfj-eY-17d"/>
                     </connections>
@@ -151,7 +156,25 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="380" y="310"/>
+            <point key="canvasLocation" x="1192" y="310"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eDY-vl-da4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g7n-O4-9dx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PS0-P5-tM5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T40-LF-2fm" kind="relationship" relationship="rootViewController" id="Qin-lK-n7G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6t-ep-qQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="310"/>
         </scene>
     </scenes>
 </document>

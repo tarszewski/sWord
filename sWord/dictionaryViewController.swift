@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  dictionaryViewController.swift
 //  sWord
 //
 //  Created by Paweł Tarszewski on 01.04.2016.
@@ -8,17 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class dictionaryViewController: UIViewController {
 
     var PL_ENG = true
+    var _dictionary = dictionary()
     
     @IBOutlet weak var UIBarButton: UIBarButtonItem!
     
+    @IBOutlet weak var FirstWordLabel: UILabel!
     @IBOutlet weak var SecondWordLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SecondWordLabel.hidden = true
+        self.FirstWordLabel.text = _dictionary.words[0].PL
+        self.SecondWordLabel.text = _dictionary.words[0].ENG //half
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
