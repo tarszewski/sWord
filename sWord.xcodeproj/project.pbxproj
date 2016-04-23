@@ -21,6 +21,8 @@
 		FA32905A1CAE9307007BFB48 /* dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290591CAE9307007BFB48 /* dictionary.swift */; };
 		FA32905B1CAE9307007BFB48 /* dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290591CAE9307007BFB48 /* dictionary.swift */; };
 		FA32905C1CAE9307007BFB48 /* dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290591CAE9307007BFB48 /* dictionary.swift */; };
+		FA71E1131CCB8D390027429B /* dictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71E1121CCB8D390027429B /* dictionaryTableViewCell.swift */; };
+		FA71E1151CCB8F1B0027429B /* dictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71E1141CCB8F1B0027429B /* dictionaryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		FA3290491CAE8570007BFB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3290551CAE909B007BFB48 /* word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = word.swift; sourceTree = "<group>"; };
 		FA3290591CAE9307007BFB48 /* dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dictionary.swift; sourceTree = "<group>"; };
+		FA71E1121CCB8D390027429B /* dictionaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dictionaryTableViewCell.swift; sourceTree = "<group>"; };
+		FA71E1141CCB8F1B0027429B /* dictionaryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dictionaryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				FA3290241CAE856F007BFB48 /* AppDelegate.swift */,
 				FA3290261CAE856F007BFB48 /* ViewController.swift */,
 				FA3290281CAE856F007BFB48 /* Main.storyboard */,
+				FA71E1141CCB8F1B0027429B /* dictionaryTableViewController.swift */,
+				FA71E1121CCB8D390027429B /* dictionaryTableViewCell.swift */,
 				FA3290551CAE909B007BFB48 /* word.swift */,
 				FA3290591CAE9307007BFB48 /* dictionary.swift */,
 				FA32902E1CAE856F007BFB48 /* Assets.xcassets */,
@@ -275,8 +281,10 @@
 				FA3290271CAE856F007BFB48 /* ViewController.swift in Sources */,
 				FA32905A1CAE9307007BFB48 /* dictionary.swift in Sources */,
 				FA3290561CAE909B007BFB48 /* word.swift in Sources */,
+				FA71E1151CCB8F1B0027429B /* dictionaryTableViewController.swift in Sources */,
 				FA3290251CAE856F007BFB48 /* AppDelegate.swift in Sources */,
 				FA32902D1CAE856F007BFB48 /* sWord.xcdatamodeld in Sources */,
+				FA71E1131CCB8D390027429B /* dictionaryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +515,7 @@
 				FA32904E1CAE8570007BFB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA32904F1CAE8570007BFB48 /* Build configuration list for PBXNativeTarget "sWordTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				FA3290511CAE8570007BFB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA3290521CAE8570007BFB48 /* Build configuration list for PBXNativeTarget "sWordUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				FA3290541CAE8570007BFB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

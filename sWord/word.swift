@@ -18,10 +18,10 @@ class word {
     }
     
     func can() {
-        self.value++
+        self.value += 1
     }
     
     func cant() {
-        self.value--
+        self.value -= 1
     }
 }
