@@ -24,6 +24,19 @@ class sWordTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let dictionary1 = dictionary();
+        XCTAssert(dictionary1.number == 0)
+        
+    }
+    
+    func testAddWordToDictionary() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let dictionary1 = dictionary();
+        let word1 = word()
+        dictionary1.words += [word1]
+        XCTAssert(dictionary1.number == 1)
+        
     }
     
     func testPerformanceExample() {

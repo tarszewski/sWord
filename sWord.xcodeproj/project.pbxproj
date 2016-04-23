@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA050F1A1CCB974E008FE88A /* wordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA050F191CCB974E008FE88A /* wordTests.swift */; };
 		FA3290251CAE856F007BFB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290241CAE856F007BFB48 /* AppDelegate.swift */; };
 		FA3290271CAE856F007BFB48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3290261CAE856F007BFB48 /* ViewController.swift */; };
 		FA32902A1CAE856F007BFB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3290281CAE856F007BFB48 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA050F191CCB974E008FE88A /* wordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wordTests.swift; sourceTree = "<group>"; };
 		FA3290211CAE856F007BFB48 /* sWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3290241CAE856F007BFB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3290261CAE856F007BFB48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				FA32903C1CAE8570007BFB48 /* sWordTests.swift */,
+				FA050F191CCB974E008FE88A /* wordTests.swift */,
 				FA32903E1CAE8570007BFB48 /* Info.plist */,
 			);
 			path = sWordTests;
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA32905B1CAE9307007BFB48 /* dictionary.swift in Sources */,
+				FA050F1A1CCB974E008FE88A /* wordTests.swift in Sources */,
 				FA32903D1CAE8570007BFB48 /* sWordTests.swift in Sources */,
 				FA3290571CAE909B007BFB48 /* word.swift in Sources */,
 			);
