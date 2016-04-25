@@ -13,7 +13,7 @@ class dictionaryViewController: UIViewController {
     var PL_ENG = true
     var _dictionary = dictionary()
     
-    @IBOutlet weak var UIBarButton: UIBarButtonItem!
+    @IBOutlet weak var buttonLanguage: UIButton!
     
     @IBOutlet weak var FirstWordLabel: UILabel!
     @IBOutlet weak var SecondWordLabel: UILabel!
@@ -32,20 +32,21 @@ class dictionaryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func UIBarButtonAction(sender: UIBarButtonItem) {
-        if(PL_ENG){
-            UIBarButton.title = "ENG<-->PL"
-            PL_ENG = false
-        } else {
-            UIBarButton.title = "PL<-->ENG"
-            PL_ENG = true
-        }
-    }
     
     @IBAction func tapViewWord(sender: UITapGestureRecognizer) {
             SecondWordLabel.hidden = false
     }
     
+    @IBAction func buttonLanguageAction(sender: AnyObject) {
+        if PL_ENG {
+            buttonLanguage.setImage(UIImage(named: "icon3.png"), forState: UIControlState.Normal)
+            PL_ENG = false
+        } else {
+            buttonLanguage.setImage(UIImage(named: "icon1.png"), forState: UIControlState.Normal)
+            PL_ENG = true
+        }
+    }
+
 
 }
 

@@ -127,5 +127,14 @@ class dictionaryTableViewController: UITableViewController {
         
     }
     
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController as? newDictionaryViewController, dictionary = sourceViewController.newDictionary {
+            // Add a new meal.
+            let newIndexPath = NSIndexPath(forRow: dictionaries.count, inSection: 0)
+            dictionaries.append(dictionary)
+            tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
+        }
+    }
+    
 
 }
